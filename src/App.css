@@ -978,3 +978,599 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .navInner {
+    padding: 12px 0;
+    gap: 16px;
+  }
+
+  .navLogo {
+    height: 32px;
+    min-width: 100px;
+  }
+
+  .navCtas {
+    gap: 8px;
+  }
+
+  .navCtas .btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 60px 0 40px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .heroSubtitle {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .heroCtas {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .heroCtas .btn {
+    width: 100%;
+  }
+
+  .previewFrame {
+    border-radius: 12px;
+  }
+
+  .previewTop {
+    padding: 12px 16px;
+  }
+
+  .previewBody {
+    height: 240px;
+  }
+
+  .previewOverlay {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+
+  .previewChips {
+    padding: 12px 16px;
+    gap: 8px;
+  }
+
+  .chip {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .miniCards {
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .miniCard {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .sectionSubtitle {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .sectionHeader {
+    max-width: 100%;
+  }
+
+  .featureCard {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+
+  .featureGrid {
+    margin-top: 32px;
+    gap: 12px;
+  }
+
+  .sectionOutro {
+    margin-top: 24px;
+  }
+
+  .sectionOutroLine {
+    font-size: 14px;
+  }
+
+  .sectionCtaRow {
+    margin-top: 28px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .sectionCtaRow .btn {
+    width: 100%;
+  }
+
+  .panel {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .panelRow {
+    gap: 12px;
+  }
+
+  .panelItem {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .panelValue {
+    font-size: 14px;
+  }
+
+  .chipGrid {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .pricingGrid {
+    margin-top: 32px;
+    gap: 12px;
+  }
+
+  .pricingCard {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+
+  .pricingPrice {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footerInner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .modalOverlay {
+    padding: 16px;
+  }
+
+  .modalCard {
+    padding: 24px;
+    border-radius: 14px;
+  }
+
+  .modalList {
+    gap: 8px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 48px 0 32px;
+  }
+
+  .heroGrid {
+    gap: 24px;
+  }
+
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .heroSubtitle {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .heroProof {
+    margin-top: 24px;
+    padding-top: 20px;
+    gap: 10px;
+  }
+
+  .proofItem {
+    font-size: 12px;
+  }
+
+  .previewFrame {
+    border-radius: 10px;
+  }
+
+  .previewTop {
+    padding: 10px 14px;
+  }
+
+  .previewBody {
+    height: 200px;
+  }
+
+  .previewPlay svg {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+  }
+
+  .previewOverlay {
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+
+  .previewLabel {
+    font-size: 11px;
+  }
+
+  .previewText {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  .previewChips {
+    padding: 10px 14px;
+  }
+
+  .chip {
+    padding: 5px 9px;
+    font-size: 10px;
+  }
+
+  .miniCards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .miniCard {
+    padding: 10px;
+  }
+
+  .miniKpi {
+    font-size: 16px;
+  }
+
+  .miniLabel {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .sectionSubtitle {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .featureCard {
+    padding: 20px;
+  }
+
+  .featureIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .featureTitle {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .featureDesc {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .featureGrid {
+    margin-top: 28px;
+    gap: 10px;
+  }
+
+  .split {
+    gap: 24px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .panelRow {
+    gap: 10px;
+  }
+
+  .panelItem {
+    padding: 12px;
+  }
+
+  .panelLabel {
+    font-size: 10px;
+  }
+
+  .panelValue {
+    font-size: 13px;
+  }
+
+  .chipGrid {
+    gap: 6px;
+  }
+
+  .pricingGrid {
+    margin-top: 28px;
+    gap: 10px;
+  }
+
+  .pricingCard {
+    padding: 20px;
+  }
+
+  .pricingName {
+    font-size: 12px;
+  }
+
+  .pricingPrice {
+    font-size: 18px;
+  }
+
+  .pricingDesc {
+    font-size: 13px;
+  }
+
+  .pricingBullets {
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .btnLg {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .sectionCtaRow {
+    margin-top: 24px;
+  }
+
+  .modalCard {
+    padding: 20px;
+  }
+
+  .modalHeader {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+  }
+
+  .modalClose {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .modalList {
+    gap: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .modalActions {
+    margin-top: 20px;
+  }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .navInner {
+    padding: 10px 0;
+  }
+
+  .navLogo {
+    height: 28px;
+    min-width: 90px;
+  }
+
+  .navCtas .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .hero {
+    padding: 40px 0 28px;
+  }
+
+  .heroTitle {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+  }
+
+  .heroSubtitle {
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 4px 10px;
+    gap: 6px;
+  }
+
+  .previewBody {
+    height: 180px;
+  }
+
+  .previewPill {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .previewMeta {
+    font-size: 11px;
+  }
+
+  .previewOverlay {
+    padding: 8px 12px;
+  }
+
+  .previewText {
+    font-size: 12px;
+  }
+
+  .previewChips {
+    gap: 6px;
+  }
+
+  .miniCards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .miniCard {
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .miniKpi {
+    font-size: 14px;
+  }
+
+  .miniLabel {
+    font-size: 10px;
+  }
+
+  .section {
+    padding: 32px 0;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .featureCard {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .featureIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .featureTitle {
+    font-size: 14px;
+  }
+
+  .featureDesc {
+    font-size: 12px;
+  }
+
+  .panel {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .panelItem {
+    padding: 10px;
+  }
+
+  .panelValue {
+    font-size: 12px;
+  }
+
+  .chipGrid {
+    gap: 5px;
+  }
+
+  .chip {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .pricingCard {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .pricingPrice {
+    font-size: 16px;
+  }
+
+  .pricingBullets {
+    font-size: 11px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .btnLg {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .modalOverlay {
+    padding: 12px;
+  }
+
+  .modalCard {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .footer {
+    padding: 24px 0;
+  }
+
+  .footerLogo {
+    height: 28px;
+  }
+
+  .footerText {
+    font-size: 12px;
+  }
+}

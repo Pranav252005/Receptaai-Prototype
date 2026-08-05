@@ -41,48 +41,37 @@ function TiltCard({ className, children }: { className: string; children: ReactN
 export default function Landing() {
   const pricingPlans = [
     {
-      name: 'Basic Plan',
-      setup: '$99 setup',
-      monthly: '$50/month',
-      summary: ['Simple, reliable call handling', '1 revision / month', '1 phone number included'],
-      details: [
-        'Handles basic information calls',
-        '1 revision per month (minor changes only)',
-        'Fully built and deployed by our AI team',
-        '1 phone number included',
+      name: 'With Appointments',
+      monthly: '$300/month',
+      summary: [
+        'Appointment booking + full call handling',
         '24/7 availability',
-        'Perfect for: Businesses that want around-the-clock call coverage without complexity',
+        '+$50/month per additional number',
+      ],
+      details: [
+        'Appointment booking + full call information handling',
+        'Ongoing maintenance and support included',
+        '24/7 availability',
+        'Call transfer functionality',
+        'Additional phone number integration: $50/month per number',
+        'Perfect for: Service-oriented businesses managing calls and schedules',
       ],
     },
     {
-      name: 'Starter Plan',
-      setup: '$129 setup',
-      monthly: '$70/month',
-      summary: ['Appointment booking + info handling', '3 revisions / month', 'Call transfer + 2 numbers'],
+      name: 'Without Appointments',
+      monthly: '$200/month',
+      summary: [
+        'Call handling and information calls',
+        '24/7 availability',
+        '+$50/month per additional number',
+      ],
       details: [
-        'Appointment booking + basic call information handling',
-        '3 revision rounds per month (moderate changes)',
-        'Partial AI customization with your input',
-        '2 phone numbers included',
+        'Handles information and general calls',
+        'Ongoing maintenance and support included',
         '24/7 availability',
         'Call transfer functionality',
-        'Perfect for: Service-oriented businesses looking to manage calls and schedules efficiently',
-      ],
-    },
-    {
-      name: 'Pro Plan',
-      setup: '$199 setup',
-      monthly: '$90/month',
-      summary: ['Advanced call handling', 'SMS/email automations', '8 revisions + 4 numbers'],
-      details: [
-        'Appointment booking + advanced call handling',
-        'SMS and email workflow automation',
-        '8 revision rounds per month',
-        'Fully custom AI built to your exact specifications',
-        '4 phone numbers included',
-        'Call handling aligned with your company’s business hours',
-        'Call transfer functionality',
-        'Perfect for: Businesses seeking full-featured automation and professional call management',
+        'Additional phone number integration: $50/month per number',
+        'Perfect for: Businesses that want around-the-clock call coverage without booking',
       ],
     },
   ]
@@ -258,9 +247,7 @@ export default function Landing() {
               {pricingPlans.map((plan, index) => (
                 <TiltCard key={plan.name} className="pricingCard">
                   <div className="pricingName">{plan.name}</div>
-                  <div className="pricingPrice">
-                    {plan.setup} · {plan.monthly}
-                  </div>
+                  <div className="pricingPrice">{plan.monthly}</div>
                   <div className="pricingDesc">{plan.summary[0]}</div>
                   <ul className="pricingBullets">
                     {plan.summary.slice(0, 3).map((point) => (
@@ -273,6 +260,9 @@ export default function Landing() {
                 </TiltCard>
               ))}
             </div>
+            <p className="sectionSubtitle" style={{ marginTop: '24px', textAlign: 'center' }}>
+              Need more phone numbers? Add any number to your plan for $50/month each.
+            </p>
           </div>
         </section>
 
@@ -282,9 +272,7 @@ export default function Landing() {
               <div className="modalHeader">
                 <div>
                   <div className="pricingName">{pricingPlans[openPlan].name}</div>
-                  <div className="pricingPrice">
-                    {pricingPlans[openPlan].setup} · {pricingPlans[openPlan].monthly}
-                  </div>
+                  <div className="pricingPrice">{pricingPlans[openPlan].monthly}</div>
                 </div>
                 <button className="modalClose" type="button" onClick={() => setOpenPlan(null)} aria-label="Close">
                   ×
